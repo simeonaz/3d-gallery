@@ -1,7 +1,4 @@
 <script>
-window.addEventListener('resize', function () {
-  location.reload()
-})
 export default {
   data() {
     return {
@@ -58,15 +55,15 @@ export default {
         v-if="menu"
         @click="changeMenuIcon"
       ></div>
-      <div class="nav-links bg-[#270302] md:bg-inherit hidden md:flex lg:mr-4">
+      <div class="nav-links md:bg-inherit hidden md:flex lg:mr-4">
         <ul class="md:grid md:grid-cols-4 md:gap-x-8 md:place-items-center">
           <li class="mt-4 md:mt-0">
-            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none"
+            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
               >Shop</a
             >
           </li>
           <li class="mt-8 md:mt-0">
-            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none"
+            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
               >Created</a
             ><span
               class="px-2 py-1 ml-1 bg-gray-300 rounded-full text-sm text-black font-bold opacity-0 md:opacity-100 select-none"
@@ -76,7 +73,7 @@ export default {
           <li class="mt-8 md:mt-0">
             <a
               href="#"
-              class="text-lg text-red-400 md:pb-3.5 md:border-b-4 md:border-red-400 font-semibold select-none"
+              class="text-lg text-red-400 md:pb-3.5 md:border-b-4 md:border-red-400 font-semibold select-none transition-all duration-150"
               >Owned</a
             ><span
               class="px-2 py-1 ml-1 bg-gray-300 rounded-full text-sm text-black font-bold opacity-0 md:opacity-100 select-none"
@@ -86,7 +83,7 @@ export default {
           <li class="my-8 md:my-0">
             <a
               href="#"
-              class="text-lg text-gray-400 font-semibold hover:hover:text-red-400 select-none"
+              class="text-lg text-gray-400 font-semibold hover:hover:text-red-400 select-none transition-all duration-150"
               >Collection</a
             ><span
               class="px-2 py-1 ml-1 bg-gray-300 rounded-full text-sm text-black font-bold opacity-0 md:opacity-100 select-none"

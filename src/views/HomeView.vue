@@ -2,6 +2,19 @@
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import imageList from '@/images'
+
+window.addEventListener('resize', function () {
+  location.reload()
+})
+let loadedCount = 0
+const imgLoaded = (index) => {
+  console.log(`L'image ${index} a été correctement chargée.`)
+  imageList[index].loaded = true
+  loadedCount++
+  if (loadedCount === imageList.length) {
+    console.log('Toutes les images ont été chargées avec succès.')
+  }
+}
 </script>
 
 <template class="max-w-screen min-h-screen font-[Poppins]">
@@ -10,12 +23,19 @@ import imageList from '@/images'
     <div
       v-for="item in imageList"
       :key="item.id"
-      class="w-full h-auto mx-auto bg-white shadow-lg cursor-pointer hover:shadow-2xl rounded-lg overflow-hidden"
+      class="w-full h-auto mx-auto bg-white shadow-lg cursor-pointer hover:shadow-2xl hover:lg:shadow-stone-900 rounded-lg overflow-hidden"
     >
-      <img class="w-full h-80 object-cover object-center" :src="item.source" alt="3D image" />
+      <figure>
+        <img
+          class="w-full h-80 object-cover object-center"
+          :src="item.source"
+          alt="3D image"
+          @load="imgLoaded(item.id)"
+        />
+      </figure>
       <div class="px-4 py-2">
         <div class="flex justify-start w-full">
-          <img :src="item.source" alt="" class="rounded-full w-6 h-6" />
+          <img :src="item.source" alt="" class="rounded-full size-6" />
           <span class="font-bold text-sm text-gray-400 mt-0.5 ml-1">@{{ item.owner }}</span>
         </div>
       </div>
@@ -24,8 +44,8 @@ import imageList from '@/images'
           <span class="text-md text-semibold">Price</span>
           <span class="inline-block text-xl font-semibold text-gray-700">$100.00</span>
         </div>
-        <div class="flex mt-4" @mouseover="showCard">
-          <img :src="item.source" alt="" class="rounded-full w-6 h-6" />
+        <div class="flex mt-4">
+          <img :src="item.source" alt="" class="rounded-full size-6" />
           <span class="font-bold text-sm text-gray-400 mt-0.5 ml-1">@{{ item.author }}</span>
         </div>
       </div>
@@ -33,3 +53,24 @@ import imageList from '@/images'
   </main>
   <AppFooter />
 </template>
+
+<style scoped>
+.card {
+  opacity: 0;
+  animation: card-animation 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes card-animation {
+  from {
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
