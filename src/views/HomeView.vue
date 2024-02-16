@@ -3,9 +3,9 @@ import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import imageList from '@/images'
 
-window.addEventListener('resize', function () {
+/*window.addEventListener('resize', function () {
   location.reload()
-})
+})*/
 let loadedCount = 0
 const imgLoaded = (index) => {
   console.log(`L'image ${index} a été correctement chargée.`)
