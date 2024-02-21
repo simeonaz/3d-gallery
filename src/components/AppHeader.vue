@@ -58,12 +58,16 @@ export default {
       <div class="nav-links md:bg-inherit hidden md:flex lg:mr-4">
         <ul class="md:grid md:grid-cols-4 md:gap-x-8 md:place-items-center">
           <li class="mt-4 md:mt-0">
-            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
+            <a
+              href="#"
+              class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
               >Shop</a
             >
           </li>
           <li class="mt-8 md:mt-0">
-            <a href="#" class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
+            <a
+              href="#"
+              class="text-lg text-gray-400 font-semibold hover:text-red-400 select-none transition-all duration-150"
               >Created</a
             ><span
               class="px-2 py-1 ml-1 bg-gray-300 rounded-full text-sm text-black font-bold opacity-0 md:opacity-100 select-none"
