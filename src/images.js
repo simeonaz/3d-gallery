@@ -7,6 +7,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "Lorem ipsum dolor sit amet consectetur",
+      likes: 15,
+      bookmarks: 9
     },
     {
       id: 2,
@@ -17,6 +19,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: " Sed do eiusmod tempor incididunt ut labore",
+      likes: 25,
+      bookmarks: 7
     },
     {
       id: 3,
@@ -26,6 +30,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 30,
+      bookmarks: 12
     },
     {
       id: 4,
@@ -35,6 +41,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 8,
+      bookmarks: 3
     },
     {
       id: 5,
@@ -44,6 +52,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 45,
+      bookmarks: 19
     },
     {
       id: 6,
@@ -53,6 +63,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 47,
+      bookmarks: 20
     },
     {
       id: 7,
@@ -62,6 +74,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "love n peace",
+      likes: 63,
+      bookmarks: 41
     },
     {
       id: 8,
@@ -71,6 +85,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "new collection coming soon",
+      likes: 72,
+      bookmarks: 122
     },
     {
       id: 9,
@@ -80,6 +96,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 150,
+      bookmarks: 15
     },
     {
       id: 10,
@@ -89,6 +107,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 15,
+      bookmarks: 45
     },
     {
       id: 11,
@@ -98,6 +118,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 10,
+      bookmarks: 8
     },
     {
       id: 12,
@@ -107,6 +129,8 @@ const imagesList = [
       owner: 'LouvreOnline',
       name:'Helena Lake',
       caption: "It's 2024 and we still here",
+      likes: 105,
+      bookmarks: 29
     }
   ]
 
