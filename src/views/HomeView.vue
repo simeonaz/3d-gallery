@@ -3,9 +3,6 @@ import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import imagesList from '@/images'
 
-/*window.addEventListener('resize', function () {
-  location.reload()
-})*/
 let loadedCount = 0
 const imgLoaded = (i) => {
   const index = i - 1
@@ -38,7 +35,7 @@ const imgLoaded = (i) => {
         >
           <div class="flex">
             <span class="text-white flex"
-              ><p class="text-lg font-semibold">{{ item.likes }}</p>
+              ><p class="text-lg font-bold">{{ item.likes }}</p>
               <svg
                 class="w-6 h-6 text-white ml-1"
                 aria-hidden="true"
@@ -53,8 +50,8 @@ const imgLoaded = (i) => {
                 />
               </svg>
             </span>
-            <span class="text-white flex ml-2"
-              ><p class="text-lg font-semibold">{{ item.bookmarks }}</p>
+            <span class="text-white flex ml-4"
+              ><p class="text-lg font-bold">{{ item.bookmarks }}</p>
               <svg
                 class="w-6 h-6 text-white"
                 aria-hidden="true"

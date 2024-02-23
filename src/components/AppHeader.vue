@@ -27,9 +27,13 @@ export default {
           'justify-center',
           'items-center',
           'rounded-t-[50px]',
-          'mobile-navLinks',
+          'transform',
+          'translate-y-full',
+          'transition-transform',
+          'duration-3000',
+          'ease-in-out',
           'z-[1000]',
-          'show-menu'
+          'translate-y-0'
         )
       } else {
         navLinks.classList.add('hidden')
@@ -51,11 +55,13 @@ export default {
         </button>
       </div>
       <div
-        class="overlay fixed top-0 left-0 w-full h-full z-[999]"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-[999]"
         v-if="menu"
         @click="changeMenuIcon"
       ></div>
-      <div class="nav-links md:bg-inherit hidden md:flex lg:mr-4">
+      <div
+        class="nav-links bg-white bg-opacity-90 md:bg-inherit md:bg-opacity-100 hidden md:flex lg:mr-4"
+      >
         <ul class="md:grid md:grid-cols-4 md:gap-x-8 md:place-items-center">
           <li class="mt-4 md:mt-0">
             <a
@@ -99,18 +105,3 @@ export default {
     </nav>
   </header>
 </template>
-
-<style scoped>
-.mobile-navLinks {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(100%);
-  transition: transform 3s ease;
-}
-
-.show-menu {
-  transform: translateY(0);
-}
-.overlay {
-  background: rgba(0, 0, 0, 0.7);
-}
-</style>
